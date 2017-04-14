@@ -71,12 +71,8 @@ button:focus {
 }
 .form-control {
     border-color: #495970;
-    border-radius: 5px;
+    border-radius: 10px;
     font-size: 13px;
-}
-.form-control.error {
-    color: #9c050c;
-    border-color: #9c050c;
 }
 @media (min-width: 1200px) {
     .button.formButton {
@@ -148,6 +144,7 @@ header .topHeader .languageSwitcher .languageSwitcherInner img {
     width: 30px;
     margin-left: 10px;
 }
+
 header .mainLogo {
     position: absolute;
     top: 0;
@@ -175,6 +172,7 @@ header .mainLogo img {
         width: 320px;
     }
 }
+
 header .headerSliderArea {
     position: relative;
 }
@@ -511,17 +509,6 @@ section.coupsDeCoeur .moreAdsButtonArea {
 section.coupsDeCoeur .moreAdsButtonArea .button {
     float: right;
 }
-section .agenceLinks {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-section .agenceLinks a {
-    color: #000;
-}
-section .agenceLinks a:hover {
-    text-decoration: underline;
-}
 /* /pages */
 
 /* filtres */
@@ -662,10 +649,6 @@ section .agenceLinks a:hover {
 .listingSection .listingItem .listingItemCoverImage a {
     display: block;
 }
-@media (max-width: 991px) {
-    .listingSection .listingItem .listingItemInformartion .header{
-    border-radius: 0 0 0 0 !important;    }
-}
 .listingSection .listingItem .listingItemCoverImage a.overlayLink {
     display: none !important;
     position: absolute;
@@ -736,7 +719,6 @@ section .agenceLinks a:hover {
     float: left;
     width: 100%;
     background: #f6f6f6;
-    border-radius: 20px;
 }
 .listingSection .listingItem .listingItemInformartion .header {
     float: left;
@@ -745,7 +727,6 @@ section .agenceLinks a:hover {
     background-image: -moz-linear-gradient( 90deg, rgb(73,89,112) 0%, rgb(48,47,59) 100%);
     background-image: -webkit-linear-gradient( 90deg, rgb(73,89,112) 0%, rgb(48,47,59) 100%);
     background-image: -ms-linear-gradient( 90deg, rgb(73,89,112) 0%, rgb(48,47,59) 100%);
-    border-radius: 0 20px 0 0;
 }
 .listingSection .listingItem .listingItemInformartion .header .headerItem {
     margin: 0;
@@ -854,7 +835,6 @@ section .agenceLinks a:hover {
     backface-visibility: visible !important;
     -webkit-animation-name: flipInX;
     animation-name: flipInX;
-    overflow: hidden;
 }
 .ficheSection .ficheItem .ficheItemInformartion .body .dpe-gesArea .content {
     position: relative;
@@ -1083,60 +1063,6 @@ section .agenceLinks a:hover {
 /* Li Selected State Ends */
 
 /*-------------------- Listing Item DPE GES Block Content Ends --------*/
-
-/*-------------------- DPE GES Block Model1 Version1 Colors End -------------*/
-
-
- .dpe-block-cover.no-selected,
- .dpe-block-cover.inprogress,
- .ges-block-cover.no-selected,
- .ges-block-cover.inprogress,
- .dpe-block-cover.no-selected,
- .dpe-block-cover.inprogress,
- .ges-block-cover.no-selected,
- .ges-block-cover.inprogress
-{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 999;
-}
-.no-selected {
-    background: url("../img/no-dpe.png") no-repeat center rgba(245,245,245, 0.5);
-}
-.inprogress {
-    background: url("../img/no-ges.png") no-repeat center rgba(245,245,245, 0.5);
-}
-.no-selected {
-    background: url("../img/dpe-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
-}
-.inprogress {
-    background: url("../img/ges-inprogress.png") enter rgba(245,245,245, 0.5);
-}
-
-
-
-.dpe-ges-block-m3 .dpe-blck .hover-content div.no-selected {
-    background: url("../img/no-dpe.png") no-repeat center rgba(245,245,245, 0.5);
-}
-.dpe-ges-block-m3 .dpe-blck .hover-content div.inprogress {
-    background: url("../img/dpe-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
-}
-.dpe-ges-block-m3 .ges-blck .hover-content div.no-selected {
-    background: url("../img/no-ges.png") no-repeat center rgba(245,245,245, 0.5);
-}
-.dpe-ges-block-m3 .ges-blck .hover-content div.inprogress {
-    background: url("../img/ges-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
-}
-
-.dpe-ges-block-m1-v2 .ges-block .dpe-block-cover div.inprogress {
-    background: url("../img/ges-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
-}
-
-.dpe-ges-block-m1-v2 .dpe-block .dpe-block-cover.inprogress {
-    background: url("../img/dpe-inprogress.png") no-repeat center rgba(245,245,245, 0.5);
-}
-
 
 /*-------------------- Listing Item DPE GES Block Colors Start -----------*/
 
@@ -1394,51 +1320,6 @@ section .agenceLinks a:hover {
     margin-left: auto;
     margin-right: auto;
 }
-.listingSection .listingItem .listingItemInformartion .body .contactAgencySection .modal {
-    margin-top: 50px;
-    text-align: center;
-}
-.listingSection .listingItem .listingItemInformartion .body .contactAgencySection .modal .modal-dialog {
-    padding-top: 50px;
-}
-.listingSection .listingItem .listingItemInformartion .body .contactAgencySection .modal .modal-content {
-    float: left;
-}
-.listingSection .listingItem .listingItemInformartion .body .contactAgencySection .modal .modalHeaderSection .agencyLogo {
-    position: absolute;
-    float: left;
-    width: 100%;
-    top: -70px;
-}
-.listingSection .listingItem .listingItemInformartion .body .contactAgencySection .modal .bienHeader {
-    margin-top: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #d0d0d0;
-}
-.listingSection .listingItem .listingItemInformartion .body .contactAgencySection .modal .bienHeader .bienTypeTitle,
-.listingSection .listingItem .listingItemInformartion .body .contactAgencySection .modal .bienHeader .bienTitle {
-    margin: 0;
-}
-.listingSection .listingItem .listingItemInformartion .body .contactAgencySection .modal .bienHeader .bienPrice {
-    margin-top: 10px;
-}
-.listingSection .listingItem .listingItemInformartion .body .contactAgencySection .modal .bienHeader .bienID {
-    color: #d0d0d0;
-    text-align: center;
-}
-.listingSection .listingItem .listingItemInformartion .body .contactAgencySection .modal .modalHeaderSection .coverImage {
-    width: 100%;
-}
-.listingSection .listingItem .listingItemInformartion .body .contactAgencySection .modal form {
-    padding: 40px;
-    float: left;
-    width: 100%;
-    background: #FFF;
-}
-.listingSection .listingItem .listingItemInformartion .body .contactAgencySection .modal form button {
-    margin: 0;
-    float: none;
-}
 @media (min-width: 768px) {
     .listingSection .listingItem .listingItemInformartion .body .bienShortDescription p {
         height: 90px;
@@ -1575,56 +1456,6 @@ section .agenceLinks a:hover {
 .ficheSection .ficheItem .ficheItemInformartion .ficheItemCoverImage img {
     height: 300px;
     object-fit: cover;
-}
-.ficheSection .ficheItem .ficheItemInformartion .ficheItemCoverImage .overlay {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    display: none;
-    align-items: center;
-    justify-content: center;
-    background: rgba(48, 47, 59, 0.7);
-    -webkit-animation-duration: 0.8s;
-    animation-duration: 0.8s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-name: fadeIn;
-    animation-name: fadeIn;
-    cursor: pointer;
-}
-.ficheSection .ficheItem .ficheItemInformartion .ficheItemCoverImage a:hover .overlay {
-    display: flex;
-}
-.ficheSection .ficheItem .ficheItemInformartion .ficheItemCoverImage .overlay i {
-    font-size: 50px;
-    color: rgba(255, 255, 255, 0.8);
-}
-.ficheSection .ficheItem .ficheItemInformartion .ficheItemCoverImage .owl-nav div  {
-    position: absolute;
-    top: 40%;
-    font-size: 70px;
-    transition: all 0.5s;
-    cursor: pointer;
-}
-.ficheSection .ficheItem .ficheItemInformartion .ficheItemCoverImage .owl-nav i  {
-    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
-    color: rgba(255, 255, 255, 0.7);
-}
-.ficheSection .ficheItem .ficheItemInformartion .ficheItemCoverImage .owl-nav div:hover i  {
-    color: #FFF;
-}
-.ficheSection .ficheItem .ficheItemInformartion .ficheItemCoverImage .owl-nav .owl-prev {
-    left: 20px;
-}
-.ficheSection .ficheItem .ficheItemInformartion .ficheItemCoverImage .owl-nav .owl-prev:hover {
-    padding-left: 5px;
-}
-.ficheSection .ficheItem .ficheItemInformartion .ficheItemCoverImage .owl-nav .owl-next {
-    right: 20px;
-}
-.ficheSection .ficheItem .ficheItemInformartion .ficheItemCoverImage .owl-nav .owl-next:hover {
-    padding-right: 5px;
 }
 .ficheSection .ficheItem .ficheItemInformartion .ficheItemCoverImageNav {
     float: left;
@@ -1845,7 +1676,7 @@ form .subFormSectionTitle {
 .fileUploadLabel i {
     position: relative;
     left: -12px;
-    border-radius: 5px 0 0 5px;
+    border-radius: 10px 0 0 10px;
     padding: 8px 40px;
     font-size: 18px;
     color: #FFF;
@@ -1913,9 +1744,6 @@ footer .siteMap ul a {
     text-transform: uppercase;
     font-size: 9px;
 }
-footer .siteMap ul a:hover {
-    text-decoration: underline;
-}
 footer .footerBase {
     color: #FFF;
 }
@@ -1924,9 +1752,6 @@ footer .footerBase .row {
 }
 footer .footerBase .companyTitleLink {
     color: #FFF;
-}
-footer .footerBase .companyTitleLink:hover {
-    text-decoration: underline;
 }
 footer .footerBase .companyTitle {
     margin: 0;
@@ -1961,9 +1786,6 @@ footer .footerBase p {
 }
 footer .footerBase .footerCopyright a {
     color: #FFF;
-}
-footer .footerBase .footerCopyright a:hover {
-    text-decoration: underline;
 }
 footer .footerBase .footerCopyrightDmaisons {
     display: flex;
@@ -2009,144 +1831,3 @@ footer .footerBase .footerCopyrightDmaisons p {
     }
 }
 /* /footer */
-/********************** Form Error Model1  Starts  ****************************/
-/*----------------------------------------------------------------------------*/
-/*-------------------- Form Error Block Content Starts ----------------*/
-.form-error-blck {
-    display: none;
-}
- .form-error-blck {
-    display: inline-block;
-    z-index: 170;
-    position: absolute;
-    right: 21px;
-    top: 50%;
-    transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-}
-/* This is for fixing form error icon positioning problem when
-the drop down is opened above and the form tooltip  is under it */
-.form-error.form-error-m1 .form-error-blck.form-error-blck-pos-fix {
-    z-index: 110;
-}
-.form-error.form-error-m1 .error-btn i {
-    font-size: 15px;
-    height: 15px;
-    line-height: 15px;
-}
-.form-error.form-error-m1 .error-btn + .tooltip {
-    z-index: 150;
-}
-
-.form-error.form-error-m1 .form-error-blck.search-form-error-blck {
-    right: 4%;
-}
-.form-error-blck>a
-{
-  color: #761518;
-}
-/*-------------------- Form Error Block Content Ends ----------------*/
-
-/*-------------------- Form Error Block Colors Start ----------------*/
-.form-border-rect .form-error.form-error-m1 input,
-.form-border-rect .form-error.form-error-m1 select,
-.form-border-rect .form-error.form-error-m1 textarea,
-.form-border-rect .form-error.form-error-m1 .custom-multiselect-btn,
-.form-border-rect .form-error.form-error-m1 .select2-selection--single,
-.form-border-rect .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
-.form-border-rect .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
-    border: 1px solid #cd1711;
-}
-
-.form-border-rounded .form-error.form-error-m1 input,
-.form-border-rounded .form-error.form-error-m1 select,
-.form-border-rounded .form-error.form-error-m1 textarea,
-.form-border-rounded .form-error.form-error-m1 .custom-multiselect-btn,
-.form-border-rounded .form-error.form-error-m1 .select2-selection--single,
-.form-border-rounded .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
-.form-border-rounded .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
-    border: 1px solid #cd1711;
-}
-
-.form-no-border .form-error.form-error-m1 input,
-.form-no-border .form-error.form-error-m1 select,
-.form-no-border .form-error.form-error-m1 textarea,
-.form-no-border .form-error.form-error-m1 .custom-multiselect-btn,
-.form-no-border .form-error.form-error-m1 .select2-selection--single,
-.form-no-border .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
-.form-no-border .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
-    border: 1px solid #cd1711;
-}
-
-.form-no-border-rect .form-error.form-error-m1 input,
-.form-no-border-rect .form-error.form-error-m1 select,
-.form-no-border-rect .form-error.form-error-m1 textarea,
-.form-no-border-rect .form-error.form-error-m1 .custom-multiselect-btn,
-.form-no-border-rect .form-error.form-error-m1 .select2-selection--single,
-.form-no-border-rect .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
-.form-no-border-rect .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
-    border: 1px solid #cd1711;
-}
-
-.form-no-border-rounded .form-error.form-error-m1 input,
-.form-no-border-rounded .form-error.form-error-m1 select,
-.form-no-border-rounded .form-error.form-error-m1 textarea,
-.form-no-border-rounded .form-error.form-error-m1 .custom-multiselect-btn,
-.form-no-border-rounded .form-error.form-error-m1 .select2-selection--single,
-.form-no-border-rounded .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
-.form-no-border-rounded .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
-    border: 1px solid #cd1711;
-}
-
-.form-border-btm .form-error.form-error-m1 input,
-.form-border-btm .form-error.form-error-m1 select,
-.form-border-btm .form-error.form-error-m1 textarea,
-.form-border-btm .form-error.form-error-m1 .custom-multiselect-btn,
-.form-border-btm .form-error.form-error-m1 .select2-selection--single,
-.form-border-btm .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--below .select2-selection--single,
-.form-border-btm .form-error.form-error-m1 .select2-container--default.select2-container--open.select2-container--above .select2-selection--single {
-    border: 1px solid transparent;
-    border-bottom: 1px solid #cd1711;
-}
-
-.form-error.form-error-m1 .error-btn i {
-    color: #cd1711;
-}
-.form-error.form-error-m1 .error-btn + .tooltip > .tooltip-inner {
-    background-color: #cd1711;
-    max-width: 250px;
-    width: 500px;
-    padding: 5px;
-}
-.form-error.form-error-m1 .error-btn + .tooltip.top .tooltip-arrow {
-    bottom: 0;
-    left: 50%;
-    margin-left: -5px;
-    border-top-color: #cd1711;
-    border-width: 5px 5px 0;
-}
-/*-------------------- Form Error Block Colors End ----------------*/
-
-/*-------------------- Form Error Block Media Queries Start -------*/
-@media (min-width: 480px)  and (max-width: 600px){
-  .form-error-blck.search-form-error-blck {
-        right: 7%;
-    }
-}
-@media (min-width: 601px)  and (max-width: 768px){
- .form-error-blck.search-form-error-blck {
-        right: 8%;
-    }
-}
-
-@media (min-width: 992px) {
- .form-error-blck.search-form-error-blck {
-        right: -20px;
-    }
-}
-/*-------------------- Form Error Block Media Queries End -------*/
-/********************** Form Error Model1 Ends  ****************************/
-/*-------------------------------------------------------------------------*/
